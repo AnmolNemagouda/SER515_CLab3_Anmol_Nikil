@@ -57,4 +57,24 @@ public class Smell1AlmostBestTest {
         assertEquals(-8, Smell1AlmostBest.toPower(-2,3), "Result of Negative base with odd exponent should be negative");
         assertEquals(16, Smell1AlmostBest.toPower(-2,4), "Result of Negative base with even exponent should be positive");
     }
+
+    @Test
+    void testNegativeExponent() {
+        System.out.println("Running testNegativeExponent: Testing 2^-1....");
+        assertThrows(IllegalArgumentException.class,
+                () -> Smell1AlmostBest.toPower(2, -1),
+                "Negative exponents should throw an exception");
+    }
+
+    @Test
+    void testBaseZeroPositiveExponent() {
+        System.out.println("Running testBaseZeroPositiveExponent: Testing 0^5...");
+        assertEquals(0, Smell1AlmostBest.toPower(0,5), "0 raused to any positive power is 0");
+    }
+
+    @Test
+    void testZeroBaseExponent() {
+        System.out.println("Running testZeroBaseExponent: Testing 0^0...");
+        assertEquals(1, Smell1AlmostBest.toPower(0,0), " 0th power of 0 should return 1");
+    }
 }
