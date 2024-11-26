@@ -36,4 +36,25 @@ public class Smell1AlmostBestTest {
 
         assertEquals(result1, result2, "Cache should return the same result");
     }
+
+    @Test
+    void testLargeExponent() {
+        System.out.println("Running testLargeExponent: Testing 2^31.....");
+        assertThrows(ArithmeticException.class,
+                () -> Smell1AlmostBest.toPower(2,31),
+                        "Large exponents may cause overflow");
+    }
+
+    @Test
+    void testBaseOne() {
+        System.out.println("Running testBaseOne: Testing 1^1000....");
+        assertEquals(1, Smell1AlmostBest.toPower(1,1000), "1 raised to any power should be 1");
+    }
+
+    @Test
+    void testNegativeBase() {
+        System.out.println("Running testNegativeBase: Testing -2^3 and -2 ^4....");
+        assertEquals(-8, Smell1AlmostBest.toPower(-2,3), "Result of Negative base with odd exponent should be negative");
+        assertEquals(16, Smell1AlmostBest.toPower(-2,4), "Result of Negative base with even exponent should be positive");
+    }
 }
