@@ -28,3 +28,8 @@ Date:   Tue Nov 26 19:41:03 2024 -0700
 
     added files to online repo to work as a team
 
+commit ae9d2c9e332be96b2b0929fc7a794805206da660 (HEAD -> master, origin/master)
+Author: AnmolNemagouda <anemagou@asu.edu>
+Date:   Tue Nov 26 21:45:04 2024 -0700
+
+     Adding submission.txt
