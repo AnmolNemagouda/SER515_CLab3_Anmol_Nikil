@@ -1,0 +1,30 @@
+commit 9a6f1a84db8c9e6582f68b500f398cc979d8c872 (HEAD -> master)
+Author: AnmolNemagouda <anemagou@asu.edu>
+Date:   Mon Nov 25 22:53:28 2024 -0700
+
+    Initial commit for repository, along with a test case file and Junit library
+
+commit ab7566f67b5d3120d7551be63e01ccb26e4aa700 (HEAD -> master)
+Author: AnmolNemagouda <anemagou@asu.edu>
+Date:   Mon Nov 25 23:08:28 2024 -0700
+
+    Added test cases for base one, large exponent and negative base
+
+commit d800475fdc24d4aebae7aa2f54c43200f8d1434b (HEAD -> master)
+Author: AnmolNemagouda <anemagou@asu.edu>
+Date:   Mon Nov 25 23:40:41 2024 -0700
+
+    Added equivalance class test cases and negative exponent test case
+
+commit 40ec3d51297059824b1f5c3e06bb3c85ca34501b (HEAD -> master)
+Author: AnmolNemagouda <anemagou@asu.edu>
+Date:   Tue Nov 26 11:23:38 2024 -0700
+
+    Added jacoco jar file and tried generating a report
+
+commit 2126c0b07b4d194907d7dd948d5ac321538c548c (HEAD -> master)
+Author: AnmolNemagouda <anemagou@asu.edu>
+Date:   Tue Nov 26 19:41:03 2024 -0700
+
+    added files to online repo to work as a team
+
