@@ -1,0 +1,15 @@
+  @Test
+    void testMaxAllowedResult() {
+        System.out.println(Running testMaxAllowedResult Testing the largest allowed result...);
+        int result = Smell1AlmostBest.toPower(46340, 2);  sqrt(Integer.MAX_VALUE)
+        assertEquals(2147395600, result, Should return the correct result for the largest allowed calculation);
+    }
+
+    @Test
+    void testMinIntegerBase() {
+    System.out.println(Running testMinIntegerBase Testing with Integer.MIN_VALUE as base...);
+    assertEquals(1, Smell1AlmostBest.toPower(Integer.MIN_VALUE, 0), Any number to the power of 0 should be 1);
+    assertEquals(Integer.MIN_VALUE, Smell1AlmostBest.toPower(Integer.MIN_VALUE, 1), MIN_VALUE to the power of 1 should be MIN_VALUE);
+    assertThrows(ArithmeticException.class,
+            () - Smell1AlmostBest.toPower(Integer.MIN_VALUE, 2),
+            MIN_VALUE squared should cause overflow);
