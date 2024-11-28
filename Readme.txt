@@ -37,6 +37,7 @@ Integer Limits Boundary Tests
     this is a culmination of exponent 0, base 1 and max allowed result cases, we are additionally throwing an exception when\
     the exponent gives an answer which causes overflow
 
+
 Boundary Conditions
 12. testBoundaryExponent: Tests boundary conditions for exponents:
 - Zero exponent, a^0 = 1 where a is an element of naturals numbers
@@ -48,3 +49,37 @@ Code Coverage Analysis:
 50% branch coverage
 12 test methods covering 64 lines of code
 Each test is designed to verify specific aspects of the power calculation function, from basic functionality to edge cases and error conditions, ensuring robust operation of the toPower method.
+
+
+
+
+
+
+
+
+Commands used for part 1 from command line to get JUnit and jacoco reports:
+for Junit:
+
+javac -d build -g src/solid3/Smell1AlmostBest.java
+
+javac -d build -cp "lib/junit-platform-console-standalone-1.9.2.jar;build" src/test/solid3/Smell1AlmostBestTest.java
+
+java -cp "lib/junit-platform-console-standalone-1.9.2.jar;build" org.junit.platform.console.ConsoleLauncher --class-path build --scan-class-path
+
+for jacoco:
+
+javac -d build -g src/solid3/Smell1AlmostBest.java
+
+javac -d build -cp "lib/junit-platform-console-standalone-1.9.2.jar;build" src/test/solid3/Smell1AlmostBestTest.java
+
+java -cp "lib/junit-platform-console-standalone-1.9.2.jar;build" org.junit.platform.console.ConsoleLauncher --class-path build --scan-class-path
+
+java -javaagent:lib/jacocoagent.jar -cp "lib/junit-platform-console-standalone-1.9.2.jar;build" org.junit.platform.console.ConsoleLauncher --scan-class-path
+
+java -jar lib/jacococli.jar report jacoco.exec --classfiles build --sourcefiles solid3/src/solid3 --sourcefiles solid3/src/test/solid3 --html report/part1_coverage.html
+
+for second report ,after the first 4 commands:
+
+java -jar lib/jacococli.jar report jacoco.exec --classfiles build --sourcefiles solid3/src/solid3 --sourcefiles solid3/src/test/solid3 --html report/part1_1b_coverage.html
+
+
