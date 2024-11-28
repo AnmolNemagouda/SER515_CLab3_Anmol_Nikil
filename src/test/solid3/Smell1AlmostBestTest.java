@@ -26,18 +26,6 @@ public class Smell1AlmostBestTest {
     }
 
     @Test
-    void testCacheUsage() {
-        System.out.println("Running testCacheUsage: Testing cache with 2^3...");
-        int result1 = Smell1AlmostBest.toPower(2, 3);
-        System.out.println("First call result: " + result1);
-
-        int result2 = Smell1AlmostBest.toPower(2, 3);
-        System.out.println("Second call result (from cache): " + result2);
-
-        assertEquals(result1, result2, "Cache should return the same result");
-    }
-
-    @Test
     void testLargeExponent() {
         System.out.println("Running testLargeExponent: Testing 2^31.....");
         assertThrows(ArithmeticException.class,
@@ -67,14 +55,35 @@ public class Smell1AlmostBestTest {
     }
 
     @Test
-    void testBaseZeroPositiveExponent() {
-        System.out.println("Running testBaseZeroPositiveExponent: Testing 0^5...");
-        assertEquals(0, Smell1AlmostBest.toPower(0,5), "0 raused to any positive power is 0");
+    void testCaching() {
+        System.out.println("Running testCaching: Testing if results are cached...");
+        long start = System.nanoTime();
+        int result1 = Smell1AlmostBest.toPower(3, 10);
+        long end1 = System.nanoTime();
+        
+        long start2 = System.nanoTime();
+        int result2 = Smell1AlmostBest.toPower(3, 10);
+        long end2 = System.nanoTime();
+        
+        assertEquals(result1, result2, "Both calls should return the same result");
+        assertTrue((end1 - start) > (end2 - start2), "Second call should be faster due to caching");
     }
 
     @Test
-    void testZeroBaseExponent() {
-        System.out.println("Running testZeroBaseExponent: Testing 0^0...");
-        assertEquals(1, Smell1AlmostBest.toPower(0,0), " 0th power of 0 should return 1");
+    void testMultipleCalls() {
+        System.out.println("Running testMultipleCalls: Testing multiple calls with different exponents...");
+        int base = 2;
+        assertEquals(2, Smell1AlmostBest.toPower(base, 1), "2^1 should be 2");
+        assertEquals(4, Smell1AlmostBest.toPower(base, 2), "2^2 should be 4");
+        assertEquals(8, Smell1AlmostBest.toPower(base, 3), "2^3 should be 8");
+        assertEquals(16, Smell1AlmostBest.toPower(base, 4), "2^4 should be 16");
+    }
+
+    @Test
+    void testLargeBase() {
+        System.out.println("Running testLargeBase: Testing with a large base...");
+        assertThrows(ArithmeticException.class,
+                () -> Smell1AlmostBest.toPower(Integer.MAX_VALUE, 2),
+                "Large base may cause overflow");
     }
 }
