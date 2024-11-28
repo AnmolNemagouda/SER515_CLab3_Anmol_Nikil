@@ -1,8 +1,11 @@
 Basic Power Operation
 1. testPositiveBoundary:
+    tests the positive boundary i.e it tests the basic to power operation with positive integers. This is the basic
+    functionality of this program
 
 Zero Handling
 2. testZeroExponent:
+    Testing that any base raised to 0 is 1, this is a basic mathematical rule, tested for both positive and negative exponents
 
 3. testBaseZeroPositiveExponent: Verifies that 0 raised to any positive power equals 0
 
@@ -10,8 +13,11 @@ Zero Handling
 
 Edge Cases
 5. testBaseOne:
+    Testing that base 1 with any exponent returns 1, also a mathematical rule, tested for very large exponents as well
 
 6. testNegativeBase:
+    Testing a negative base, in maths negative number mulitplied odd times is negative and multiplied even times is positive
+    exponent is basically repeated multiplication, this test verifies this.
 
 Caching Verification & Perfromance Tests
 7. testCaching: Measures execution time of repeated calculations to verify caching mechanism:
@@ -25,8 +31,11 @@ Integer Limits Boundary Tests
 9. testLargeBase: Tests overflow prevention with Integer.MAX_VALUE as base
 
 10. testMaxAllowedResult:
+    testing the max integer allowed without causing overflow, this is checking the limits of the java datatypes
 
 11. testMinIntegerBase:
+    this is a culmination of exponent 0, base 1 and max allowed result cases, we are additionally throwing an exception when\
+    the exponent gives an answer which causes overflow
 
 Boundary Conditions
 12. testBoundaryExponent: Tests boundary conditions for exponents:
