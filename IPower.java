@@ -8,14 +8,15 @@ public interface IPower {
 }
 
 class PowerSimple implements IPower {
+	@Override
 	public int toPower(int n, int pow) {
-		if (pow == 0)
+		if (pow == 0) {
 			return 1;
+		}
 		int res = 1;
-		for (int i = 0; i < pow; res *= n, i++)
-			;
-		;
-		;
+		for (int i = 0; i < pow; i++) {
+			res *= n;
+		}
 		return res;
 	}
 }
@@ -24,8 +25,9 @@ class PowerCached implements IPower {
 	private static Map<Integer, Map<Integer, Integer>> __cache = new HashMap<Integer, Map<Integer, Integer>>();
 
 	// resolves the inefficiency in AlmostBest
+	@Override
 	public int toPower(int n, int pow) {
-		Map<Integer, Integer> entry = PowerCached.__cache.get(n);
+		Map<Integer, Integer> entry = __cache.get(n);
 
 		if (entry == null) {
 			entry = new HashMap<Integer, Integer>();
