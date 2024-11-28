@@ -1,3 +1,7 @@
+## Authors:
+Anmol Nemagouda (anemagou)
+Nikil Suresh Raaju (nsureshr)
+
 ## Commit Hashes of Submissions
 * Part 1.a: ce873a15008fca4ebf858fa5b25c5a91e4cd74ef
 * Part 1.b: 98dfaf023f2a198a63a699b48ef03c6cffa1c66a
