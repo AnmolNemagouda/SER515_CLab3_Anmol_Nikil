@@ -7,4 +7,6 @@ IPower.java:18:	UnnecessarySemicolon:	Unnecessary semicolon
 IPower.java:27:	MissingOverride:	The method 'toPower(int, int)' is missing an @Override annotation.
 IPower.java:28:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'PowerCached': '__cache' is already in scope because it is declared in an enclosing type
 
-ghttps://chatgpt.com/share/6747f1ef-e260-8005-85f0-65d03e02a722
+Chat GPT response before code smell fix: https://chatgpt.com/share/6747f1ef-e260-8005-85f0-65d03e02a722
+
+Chat GPT response afte rcode smell fix: https://chatgpt.com/share/6747f9b3-4958-8001-925b-a58ece61424d
