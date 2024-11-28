@@ -1,35 +1,147 @@
-commit 9a6f1a84db8c9e6582f68b500f398cc979d8c872 (HEAD -> master)
+## Commit Hashes of Submissions
+* Part 1.a: ce873a15008fca4ebf858fa5b25c5a91e4cd74ef
+* Part 1.b: 98dfaf023f2a198a63a699b48ef03c6cffa1c66a
+* Part 2: 3876a3bef5736f47a923affded3f730ff3f2af95
+
+
+
+## git log commits list:
+
+commit ce873a15008fca4ebf858fa5b25c5a91e4cd74ef (HEAD -> master, origin/master, origin/HEAD)
 Author: AnmolNemagouda <anemagou@asu.edu>
-Date:   Mon Nov 25 22:53:28 2024 -0700
+Date:   Wed Nov 27 23:39:12 2024 -0700
 
-    Initial commit for repository, along with a test case file and Junit library
+     updated Readme with commands
 
-commit ab7566f67b5d3120d7551be63e01ccb26e4aa700 (HEAD -> master)
+commit 3876a3bef5736f47a923affded3f730ff3f2af95
+Author: Nikil-1999-ASU <nsureshr@asu.edu>
+Date:   Wed Nov 27 23:28:39 2024 -0700
+
+    part 2.f.d - addition of my answer
+
+commit b17b168e0b2a737aded317ea1ac9af93154ba54a
 Author: AnmolNemagouda <anemagou@asu.edu>
-Date:   Mon Nov 25 23:08:28 2024 -0700
+Date:   Wed Nov 27 23:17:47 2024 -0700
 
-    Added test cases for base one, large exponent and negative base
+     Adding question 2 answer docfile, with my answers and combined the pmd reports into one word file
 
-commit d800475fdc24d4aebae7aa2f54c43200f8d1434b (HEAD -> master)
+commit 476647a9d30e67d303c916d99142fa016646a841
 Author: AnmolNemagouda <anemagou@asu.edu>
-Date:   Mon Nov 25 23:40:41 2024 -0700
+Date:   Wed Nov 27 23:16:25 2024 -0700
 
-    Added equivalance class test cases and negative exponent test case
+    added explanation of test cases
 
-commit 40ec3d51297059824b1f5c3e06bb3c85ca34501b (HEAD -> master)
+commit bf548aa86730e81a937ffb29ae253a538f8d1ee1
+Author: Nikil-1999-ASU <nsureshr@asu.edu>
+Date:   Wed Nov 27 23:07:02 2024 -0700
+
+    part 1.a readme file update
+
+commit 175be3eb15d89c305324a1f687e896f3ec68e86e
+Author: Nikil-1999-ASU <nsureshr@asu.edu>
+Date:   Wed Nov 27 22:10:01 2024 -0700
+
+    AI report generation after code smell fix
+
+commit e89fd6af0e6be6708266fcbd23a461af018966f0
 Author: AnmolNemagouda <anemagou@asu.edu>
-Date:   Tue Nov 26 11:23:38 2024 -0700
+Date:   Wed Nov 27 21:59:07 2024 -0700
 
-    Added jacoco jar file and tried generating a report
+    added pmd report after smell fix
 
-commit 2126c0b07b4d194907d7dd948d5ac321538c548c (HEAD -> master)
+commit 5730fd6a06fa63a9a08521815be435c20847ba21
+Merge: 817ba8f f0326f8
+Author: Nikil-1999-ASU <nsureshr@asu.edu>
+Date:   Wed Nov 27 21:56:58 2024 -0700
+
+    Merge branch 'master' of https://github.com/AnmolNemagouda/SER515_CLab3_Anmol_Nikil
+
+commit 817ba8f4ee8323d814eaf7215ef63e6d4779e331
+Author: Nikil-1999-ASU <nsureshr@asu.edu>
+Date:   Wed Nov 27 21:55:57 2024 -0700
+
+    codesmell fixes
+
+commit f0326f8b83544132312c61150b9b81ace0847146
+Author: AnmolNemagouda <anemagou@asu.edu>
+Date:   Wed Nov 27 21:42:27 2024 -0700
+
+    Added chatgpt coversation link and copilot concersation in word doc with screenshots
+
+commit d40f152afb746ea0ffe6cc9ea0b83c649aca0cb0
+Author: Nikil-1999-ASU <nsureshr@asu.edu>
+Date:   Wed Nov 27 21:15:43 2024 -0700
+
+    pmd report generated
+
+commit 98dfaf023f2a198a63a699b48ef03c6cffa1c66a
+Author: Nikil-1999-ASU <nsureshr@asu.edu>
+Date:   Wed Nov 27 21:11:03 2024 -0700
+
+    added test case and increased coverage with jacoco report
+
+commit e2ce7e8d66982e6e4c7587c8221206e8427db03b
+Author: AnmolNemagouda <anemagou@asu.edu>
+Date:   Wed Nov 27 20:57:39 2024 -0700
+
+     readded extra mim max case after initial jacoco report
+
+commit a1cc82985a4b7b9429cda984a7324f4956e52316
+Author: AnmolNemagouda <anemagou@asu.edu>
+Date:   Wed Nov 27 20:56:20 2024 -0700
+
+     readded initial jacoco report, wrong one was added previously
+
+commit e295e61dc83e948e16264fcc02a44173604af6e7
+Author: AnmolNemagouda <anemagou@asu.edu>
+Date:   Wed Nov 27 20:50:29 2024 -0700
+
+     Added max and min integer result as extra cases after initial jacoco result
+
+commit 8aa60447b65782f88d01a28946607f4a4ec968e5
+Author: Nikil-1999-ASU <nsureshr@asu.edu>
+Date:   Wed Nov 27 20:37:33 2024 -0700
+
+    Addition of extra junit test cases, creation of readme & test result document
+
+commit e09b7d729b966d5b8c496e3f3146556ea71a58b5
+Author: AnmolNemagouda <anemagou@asu.edu>
+Date:   Tue Nov 26 21:46:18 2024 -0700
+
+    na
+
+commit ae9d2c9e332be96b2b0929fc7a794805206da660
+Author: AnmolNemagouda <anemagou@asu.edu>
+Date:   Tue Nov 26 21:45:04 2024 -0700
+
+     Adding submission.txt
+
+commit 2126c0b07b4d194907d7dd948d5ac321538c548c
 Author: AnmolNemagouda <anemagou@asu.edu>
 Date:   Tue Nov 26 19:41:03 2024 -0700
 
     added files to online repo to work as a team
 
-commit ae9d2c9e332be96b2b0929fc7a794805206da660 (HEAD -> master, origin/master)
+commit 40ec3d51297059824b1f5c3e06bb3c85ca34501b
 Author: AnmolNemagouda <anemagou@asu.edu>
-Date:   Tue Nov 26 21:45:04 2024 -0700
+Date:   Tue Nov 26 11:23:38 2024 -0700
 
-     Adding submission.txt
+    Added jacoco jar file and tried generating a report
+
+commit d800475fdc24d4aebae7aa2f54c43200f8d1434b
+Author: AnmolNemagouda <anemagou@asu.edu>
+Date:   Mon Nov 25 23:40:41 2024 -0700
+
+    Added equivalance class test cases and negative exponent test case
+
+commit ab7566f67b5d3120d7551be63e01ccb26e4aa700
+Author: AnmolNemagouda <anemagou@asu.edu>
+Date:   Mon Nov 25 23:08:28 2024 -0700
+
+    Added test cases for base one, large exponent and negative base
+
+commit 9a6f1a84db8c9e6582f68b500f398cc979d8c872
+Author: AnmolNemagouda <anemagou@asu.edu>
+Date:   Mon Nov 25 22:53:28 2024 -0700
+
+    Initial commit for repository, along with a test case file and Junit library
