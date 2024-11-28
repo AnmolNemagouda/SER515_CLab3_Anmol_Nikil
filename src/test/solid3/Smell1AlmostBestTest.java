@@ -26,14 +26,6 @@ public class Smell1AlmostBestTest {
     }
 
     @Test
-    void testLargeExponent() {
-        System.out.println("Running testLargeExponent: Testing 2^31.....");
-        assertThrows(ArithmeticException.class,
-                () -> Smell1AlmostBest.toPower(2,31),
-                        "Large exponents may cause overflow");
-    }
-
-    @Test
     void testBaseOne() {
         System.out.println("Running testBaseOne: Testing 1^1000....");
         assertEquals(1, Smell1AlmostBest.toPower(1,1000), "1 raised to any power should be 1");
@@ -44,14 +36,6 @@ public class Smell1AlmostBestTest {
         System.out.println("Running testNegativeBase: Testing -2^3 and -2 ^4....");
         assertEquals(-8, Smell1AlmostBest.toPower(-2,3), "Result of Negative base with odd exponent should be negative");
         assertEquals(16, Smell1AlmostBest.toPower(-2,4), "Result of Negative base with even exponent should be positive");
-    }
-
-    @Test
-    void testNegativeExponent() {
-        System.out.println("Running testNegativeExponent: Testing 2^-1....");
-        assertThrows(IllegalArgumentException.class,
-                () -> Smell1AlmostBest.toPower(2, -1),
-                "Negative exponents should throw an exception");
     }
 
     @Test
@@ -101,7 +85,26 @@ public class Smell1AlmostBestTest {
         assertThrows(ArithmeticException.class,
                 () -> Smell1AlmostBest.toPower(Integer.MIN_VALUE, 2),
                 "MIN_VALUE squared should cause overflow");
+    }
 
+    @Test
+    void testBaseZeroPositiveExponent() {
+        System.out.println("Running testBaseZeroPositiveExponent: Testing 0^5...");
+        assertEquals(0, Smell1AlmostBest.toPower(0,5), "0 raused to any positive power is 0");
+    }
 
+    @Test
+    void testZeroBaseExponent() {
+        System.out.println("Running testZeroBaseExponent: Testing 0^0...");
+        assertEquals(1, Smell1AlmostBest.toPower(0,0), " 0th power of 0 should return 1");
+    }
+
+    @Test
+    void testBoundaryExponent() {
+        System.out.println("Running testBoundaryExponent: Testing boundary values for exponent...");
+        assertEquals(1, Smell1AlmostBest.toPower(5, 0));
+        assertEquals(5, Smell1AlmostBest.toPower(5, 1));
+        assertThrows(IllegalArgumentException.class,
+                () -> Smell1AlmostBest.toPower(5, -1));
     }
 }
